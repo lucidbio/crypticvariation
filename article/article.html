@@ -71,40 +71,7 @@
 <p>Two or more genes are homologous genes when they share a common ancestral DNA sequence. Homologous genes in different species are considered orthologs of each other. For example, the mouse gene that codes for the enzyme pyruvate dehydrogenase  is  an orthologs of the rat gene encoding pyruvate dehydrogenase , and both are orthologs of  human pyruvate dehydrogenase. </p>
 <p>Since the DNA sequence of orthologs are not identical, orthologs can have slightly different properties. For example, the mouse version of an enzyme could have 10-fold greater catalytic activity than its rat counterpart. This variation in an enzyme’s properties could be beneficial for the organism if its environment changes and presents a new  selection pressure.</p>
 <p>Sometimes, the benefit may be obvious. For instance, if the world suddenly only has lactose as a viable food source, and mice have a faster lactose metabolizing enzyme than rats, they would clearly have an advantage over rats. This is an example of selection acting on the native activity of an enzyme.</p>
-<figure>
-	<d-figure>
- <div id="myDiv"><!-- Plotly chart will be drawn inside this DIV --></div>
- <figcaption>
-	 What a cool plot!</figcaption>
-</d-figure>
-</figure>
-  <script>
-	
-	  var trace1 = {
-	   x: [1, 2, 3, 4],
-	   y: [10, 15, 13, 17],
-	   mode: 'markers'
-	 };
 
-	 var trace2 = {
-	   x: [2, 3, 4, 5],
-	   y: [16, 5, 11, 10],
-	   mode: 'lines'
-	 };
-
-	 var trace3 = {
-	   x: [1, 2, 3, 4],
-	   y: [12, 9, 15, 12],
-	   mode: 'lines+markers'
-	 };
-
-	 var data = [ trace1, trace2, trace3 ];
-
-	 var layout = {autosize:true};
-
-	 Plotly.newPlot('myDiv', data, layout, {showSendToCloud: true});
-
-  </script>
 <p>It could be, however, that the variation in the rat lactose metabolizing enzyme by chance allows it to perform additional function(s), metabolizing charcoal, say. This alternate function could give the rat an advantage under a different selection pressure - such as if the world suddenly only has charcoal as a viable food source, say. This variation in a non-native activity of an enzyme is usually hidden until a selection pressure comes up, and is called ‘cryptic genetic variation’.</p>
 <p>Cryptic genetic variation can play an important role in evolution, because it provides an organism with a “hidden” ability to adapt to a new environment. But how do we know which variant does best? Are some variants ‘pre-adapted’ to the non-native activity, or can any variant develop high non-native activity? Do different variants adapt using the same solution, i.e. the same set of mutations, or are they constrained by their starting point? And lastly, how do these mutations increase fitness, mechanistically?</p>
 <p>The best way to answer such evolutionary questions would be to allow evolution to take place under controlled selection pressures, i.e. experimental evolution. We chose to perform directed evolution, a process that mimics natural selection to reachget a pre-defined and testable end-point of an experimenter’s liking. In this caseHere, the desired end-point is set at the enzyme (organism?) developing would be high non-native activity. Once the end-point is reached, we can trace back how different orthologs evolved to obtain this non-native function, and ask whether they used similar or different strategies, and what the molecular details of the evolution strategies are.</p>
