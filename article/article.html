@@ -18,6 +18,7 @@
 <head>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <script src="../dist/template.v2.js"></script>
+  <script src="https://unpkg.com/ngl@0.10.4/dist/ngl.js">
   <script src="script/first_person_disclaimer.js"></script>
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1" >
@@ -66,6 +67,7 @@
 <d-byline></d-byline>
 <d-article>
 <h2>Introduction</h2>
+  
 <p>Two or more genes are homologous genes when they share a common ancestral DNA sequence. Homologous genes in different species are considered orthologs of each other. For example, the mouse gene that codes for the enzyme pyruvate dehydrogenase  is  an orthologs of the rat gene encoding pyruvate dehydrogenase , and both are orthologs of  human pyruvate dehydrogenase. </p>
 <p>Since the DNA sequence of orthologs are not identical, orthologs can have slightly different properties. For example, the mouse version of an enzyme could have 10-fold greater catalytic activity than its rat counterpart. This variation in an enzyme’s properties could be beneficial for the organism if its environment changes and presents a new  selection pressure.</p>
 <p>Sometimes, the benefit may be obvious. For instance, if the world suddenly only has lactose as a viable food source, and mice have a faster lactose metabolizing enzyme than rats, they would clearly have an advantage over rats. This is an example of selection acting on the native activity of an enzyme.</p>
@@ -114,6 +116,29 @@
 <h2>Results</h2>
 <h3>Comparative directed evolution of four orthologous MBLs</h3>
 <p>We chose four variants of MBLs as starting points - NDM1 (New Delhi metallo-β-lactamase 1), VIM2 and VIM7 (Verona imipenemase 2 and 7) and EBL1 (Erythrobacter β-lactamase 1). These variants are orthologs, since they come from different sources. VIM2 and NDM1 were chosen because a lot of their biochemical and structural data is available. The others (VIM7 and EBL1) were chosen because of their high degree of homology with the first two: VIM7 and VIM2 share 80% amino acid sequence identity, while EBL1 and NDM1 share 55%. All four have similar catalytic efficiencies for β-lactam hydrolysis (kcat/KM only varies up to twofold across all six MBLs). However, their catalytic efficiencies for the promiscuous PMH activity varies by ~20 fold.</p>
+ <script>
+    var stage;
+    document.addEventListener("DOMContentLoaded", function () {
+      stage = new NGL.Stage("viewport",{backgroundColor:'white'});
+	  stage.loadFile("./data/NDM1-3spu.pdb").then(function (o) {
+	    o.addRepresentation("cartoon", {color: '#68ff6a' });  // pass schemeId here
+	    o.autoView();
+	  });
+	  stage.loadFile("./data/VIM2-1ko3.pdb").then(function (o) {
+	    o.addRepresentation("cartoon", {color: '#6897ff' });  // pass schemeId here
+	    o.autoView();
+	  });
+    });
+	
+	
+  </script>
+  <figure><d-figure>
+  <div id="viewport" style="width:100%; height:300px;"></div>
+  <figcaption>
+ 	 Overlaying the structures of  <span style="color:#68ff6a">NDM1</span> and <span style="color:#6897ff">VIM2</span> shows their high structural similarity  (Root mean square distance: 1.03 &#8491;). Use your mouse to move the structures in 3D.</figcaption>
+</d-figure>
+
+</figure>
 <p>[Interactive figure goes here. This should have the following, I think - Fig 1A (the dendrogram), Supp Fig 1B (the correlation matrix, highlighting the relevant comparisons). Perhaps the dendrogram can be made such that hovering over the bars of the activity shows you the actual data?]</p>
 <p>We used each of these sequences as a starting point for directed evolution experiments, in which we aimed to maximise the PMH activity of the enzymes:</p>
 <p>[Schematic]</p>
