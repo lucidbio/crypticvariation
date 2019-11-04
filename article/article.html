@@ -198,6 +198,9 @@ Plotly.newPlot('fig2aDiv', fig2a, layout, {showSendToCloud: true});
 <h3>Fitness is a combination of expression level and catalytic activity.</h3>
 <p>The conventional idea is that the more stable or the more soluble a protein, or the greater its functional expression, the more evolvable it is. These properties are thought to help stabilize deleterious mutations and allow for more adaptive mutations to accumulate. However, NDM1 and VIM7 have very similar properties and expression [see Fig ____], but take completely different evolutionary trajectories.</p>
 <p>How can one explain this result at the molecular level? To do so, we measured a range of molecular properties over the rounds of evolution - catalytic efficiency, soluble expression, melting temperature, and oligomeric assembly.</p>
+	
+
+	
 <p>Let’s start off with NDM1. In R1, its catalytic efficiency increased ~300-fold, but its solubility decreased from 43% to 25%. Thus, its fitness increased only by ~20-fold. The decrease in solubility from R1 never quite recovered. Catalytic efficiency continued to increase, however, which is reflected in the fitness increase of NDM1.</p>
 <p>
 <figure>
@@ -213,6 +216,24 @@ Plotly.newPlot('fig2aDiv', fig2a, layout, {showSendToCloud: true});
 var layout = {autosize:true};
 
 Plotly.newPlot('fig3Div', fig3a, layout, {showSendToCloud: true});	 
+</script>
+
+	
+	<figure>
+	<d-figure>
+ <div id="fig3bDiv"><!-- Plotly chart will be drawn inside this DIV --></div>
+ <figcaption>
+	 Figure 3B</figcaption>
+</d-figure>
+</figure>
+	
+	
+	<script src="data/fig3b.js">
+</script>
+<script>
+var layout = {autosize:true};
+
+Plotly.newPlot('fig3bDiv', fig3b, layout, {showSendToCloud: true});	 
 </script>
 
 
