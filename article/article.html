@@ -148,6 +148,25 @@
 <p>[Schematic]</p>
 <p>We transformed randomly mutagenized gene pools into E. coli, and used purifying selection to enrich for only functional variants, by plating the libraries onto agar plates containing a low ampicillin concentration. Per round, we inoculated a total of 396 variant colonies individually into 96-well plates containing liquid media. These were regrown, lysed and screened for PMH activity. We isolated and sequenced the most improved variant(s) and used them as templates for the next round of evolution.</p>
 <p>Within the first two rounds of evolution, we noticed that the orthologs that shared higher similarity showed similar improvements in fitness, regardless of their fitness starting point (compare the slopes of EBL1 with NDM1, and VIM2 with VIM7, in Fig ___).  Thus, we proceeded with directed evolution only for representative orthologs, i.e. VIM2 and NDM1.</p>
+	
+<figure>
+	<d-figure>
+ <div id="fig1dDiv"><!-- Plotly chart will be drawn inside this DIV --></div>
+ <figcaption>
+	 Figure 1D</figcaption>
+</d-figure>
+</figure>
+	
+	<script>
+
+$.getJSON( "ajax/test.json", function( data ) {
+var layout = {autosize:true};
+Plotly.newPlot('fig1dDiv', data, layout, {showSendToCloud: true});	
+
+});
+ 
+</script>
+	
 <p>We also noticed that fitness seemed to be plateauing by round 7-8. Hence, purifying selection was replaced by a pre-screening for variants with increased PMH fitness in rounds 9-10 (see schematic above). No variant with increased PMH fitness was isolated, confirming that a fitness plateau had, indeed, been reached.</p>
 <p>[Directed evolution schematic, and a plot of the fitness change per round - side by side, perhaps?]</p>
 <p>It is important to note that ‘PMH fitness’ is defined as the level of PMH activity in E. coli cell lysate. As a result, it is a function of both catalytic activity and soluble expression levels in the cell. For example, fitness differences between NDM1 and VIM2 wild-type are due to kinetics, not solubility. By contrast, EBL1 and VIM2 wild-type have similar catalytic efficiencies, but their PMH fitness differ by 35-fold due to large differences in protein expression (Put in Figure 1A and Figure 1—figure supplement 1C here).</p>
