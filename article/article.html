@@ -24,6 +24,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" >
   <link rel="stylesheet" href="style/first_person_disclaimer.css">
   <meta charset="utf8">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 
 <body>
@@ -68,7 +70,7 @@
 <d-article>
 <h2>Introduction</h2>
   
-<p>Two or more genes are homologous genes when they share a common ancestral DNA sequence. Homologous genes in different species are considered orthologs of each other. For example, the mouse gene that codes for the enzyme pyruvate dehydrogenase  is  an orthologs of the rat gene encoding pyruvate dehydrogenase , and both are orthologs of  human pyruvate dehydrogenase. </p>
+<p>Two or more genes are homologous genes when they share a common ancestral DNA sequence. Homologous genes in different species are considered orthologs of each other. For example, the mouse gene that codes for the enzyme <span class="toolip" title="Test">pyruvate dehydrogenase</span>  is  an orthologs of the rat gene encoding pyruvate dehydrogenase , and both are orthologs of  human pyruvate dehydrogenase. </p>
 <p>Since the DNA sequence of orthologs are not identical, orthologs can have slightly different properties. For example, the mouse version of an enzyme could have 10-fold greater catalytic activity than its rat counterpart. This variation in an enzyme’s properties could be beneficial for the organism if its environment changes and presents a new  selection pressure.</p>
 <p>Sometimes, the benefit may be obvious. For instance, if the world suddenly only has lactose as a viable food source, and mice have a faster lactose metabolizing enzyme than rats, they would clearly have an advantage over rats. This is an example of selection acting on the native activity of an enzyme.</p>
 
@@ -224,5 +226,9 @@ Plotly.newPlot('fig3Div', fig3a, layout, {showSendToCloud: true});
 	  find_first_person();
   });
   </script>
-
+  <script>
+  $( function() {
+    $( document ).tooltip();
+  } );
+  </script>
 </body>
