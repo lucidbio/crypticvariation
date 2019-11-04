@@ -1,0 +1,269 @@
+{
+  "visdat": {
+    "680bcc4867": ["function () ", "plotlyVisDat"]
+  },
+  "cur_data": "680bcc4867",
+  "attrs": {
+    "680bcc4867": {
+      "alpha_stroke": 1,
+      "sizes": [10, 100],
+      "spans": [1, 20],
+      "x": {},
+      "y": {},
+      "type": "scatter",
+      "mode": "lines+markers",
+      "marker": {
+        "size": 10,
+        "color": "#2EA5D7"
+      },
+      "line": {
+        "width": 2,
+        "dash": "dash",
+        "color": "#2EA5D7"
+      },
+      "name": "NDM1",
+      "error_y": {},
+      "color": "#2EA5D7",
+      "inherit": true
+    },
+    "680bcc4867.1": {
+      "alpha_stroke": 1,
+      "sizes": [10, 100],
+      "spans": [1, 20],
+      "x": {},
+      "y": {},
+      "type": "scatter",
+      "mode": "lines+markers",
+      "marker": {
+        "size": 10,
+        "color": "#96BE44"
+      },
+      "line": {
+        "width": 2,
+        "dash": "dash",
+        "color": "#96BE44"
+      },
+      "name": "VIM2",
+      "error_y": {},
+      "inherit": true
+    },
+    "680bcc4867.2": {
+      "alpha_stroke": 1,
+      "sizes": [10, 100],
+      "spans": [1, 20],
+      "x": {},
+      "y": {},
+      "type": "scatter",
+      "mode": "lines+markers",
+      "marker": {
+        "size": 10,
+        "color": "#9D5AA5"
+      },
+      "line": {
+        "width": 2,
+        "dash": "dash",
+        "color": "#9D5AA5"
+      },
+      "name": "EBL1",
+      "error_y": {},
+      "inherit": true
+    },
+    "680bcc4867.3": {
+      "alpha_stroke": 1,
+      "sizes": [10, 100],
+      "spans": [1, 20],
+      "x": {},
+      "y": {},
+      "type": "scatter",
+      "mode": "lines+markers",
+      "marker": {
+        "size": 10,
+        "color": "#AF9837"
+      },
+      "line": {
+        "width": 2,
+        "dash": "dash",
+        "color": "#AF9837"
+      },
+      "name": "VIM7",
+      "error_y": {},
+      "inherit": true
+    }
+  },
+  "layout": {
+    "margin": {
+      "b": 40,
+      "l": 60,
+      "t": 25,
+      "r": 10
+    },
+    "xaxis": {
+      "domain": [0, 1],
+      "automargin": true,
+      "title": "Evolution Rounds",
+      "titlefont": {
+        "family": "Arial",
+        "size": 16
+      },
+      "ticks": "outside",
+      "tickvals": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+      "ticktext": ["WT", "R1", "R2", "R3", "R4", "R5", "R6", "R7", "R8", "R9", "R10"]
+    },
+    "yaxis": {
+      "domain": [0, 1],
+      "automargin": true,
+      "title": "PMH Fitness (nM/s)",
+      "type": "log",
+      "range": [-1, 4],
+      "titlefont": {
+        "family": "Arial",
+        "size": 16
+      },
+      "ticks": "outside"
+    },
+    "legend": {
+      "x": 100,
+      "y": -0.35
+    },
+    "hovermode": "closest",
+    "showlegend": true
+  },
+  "source": "A",
+  "config": {
+    "showSendToCloud": false
+  },
+  "data": [
+    {
+      "x": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+      "y": [0.9, 34, 190, 410, 740, 1300, 470, 910, 1800, 1500, 3300],
+      "type": "scatter",
+      "mode": "lines+markers",
+      "marker": {
+        "color": "#2EA5D7",
+        "size": 10,
+        "line": {
+          "color": "rgba(252,141,98,1)"
+        }
+      },
+      "line": {
+        "color": "#2EA5D7",
+        "width": 2,
+        "dash": "dash"
+      },
+      "name": "NDM1",
+      "error_y": {
+        "color": "rgba(252,141,98,1)",
+        "array": [0.2, 3, 10, 20, 120, 150, 60, 30, 250, 300, 220]
+      },
+      "textfont": {
+        "color": "rgba(252,141,98,1)"
+      },
+      "error_x": {
+        "color": "rgba(252,141,98,1)"
+      },
+      "xaxis": "x",
+      "yaxis": "y",
+      "frame": null
+    },
+    {
+      "x": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+      "y": [3.5, 7.9, 13, 21, 28, 50, 70, 70, 88, 75, 120],
+      "type": "scatter",
+      "mode": "lines+markers",
+      "marker": {
+        "color": "#96BE44",
+        "size": 10,
+        "line": {
+          "color": "rgba(255,127,14,1)"
+        }
+      },
+      "line": {
+        "color": "#96BE44",
+        "width": 2,
+        "dash": "dash"
+      },
+      "name": "VIM2",
+      "error_y": {
+        "color": "rgba(255,127,14,1)",
+        "array": [0.1, 0.3, 1, 1, 1, 1, 2, 2, 1, 1, 1]
+      },
+      "error_x": {
+        "color": "rgba(255,127,14,1)"
+      },
+      "xaxis": "x",
+      "yaxis": "y",
+      "frame": null
+    },
+    {
+      "x": [1, 2, 3],
+      "y": [0.1, 4.3, 31],
+      "type": "scatter",
+      "mode": "lines+markers",
+      "marker": {
+        "color": "#9D5AA5",
+        "size": 10,
+        "line": {
+          "color": "rgba(44,160,44,1)"
+        }
+      },
+      "line": {
+        "color": "#9D5AA5",
+        "width": 2,
+        "dash": "dash"
+      },
+      "name": "EBL1",
+      "error_y": {
+        "color": "rgba(44,160,44,1)",
+        "array": [0.02, 0.3, 1, null, null, null, null, null, null, null, null]
+      },
+      "error_x": {
+        "color": "rgba(44,160,44,1)"
+      },
+      "xaxis": "x",
+      "yaxis": "y",
+      "frame": null
+    },
+    {
+      "x": [1, 2, 3],
+      "y": [0.3, 0.9, 1.1],
+      "type": "scatter",
+      "mode": "lines+markers",
+      "marker": {
+        "color": "#AF9837",
+        "size": 10,
+        "line": {
+          "color": "rgba(214,39,40,1)"
+        }
+      },
+      "line": {
+        "color": "#AF9837",
+        "width": 2,
+        "dash": "dash"
+      },
+      "name": "VIM7",
+      "error_y": {
+        "color": "rgba(214,39,40,1)",
+        "array": [0.02, 0.06, 0.1, null, null, null, null, null, null, null, null]
+      },
+      "error_x": {
+        "color": "rgba(214,39,40,1)"
+      },
+      "xaxis": "x",
+      "yaxis": "y",
+      "frame": null
+    }
+  ],
+  "highlight": {
+    "on": "plotly_click",
+    "persistent": false,
+    "dynamic": false,
+    "selectize": false,
+    "opacityDim": 0.2,
+    "selected": {
+      "opacity": 1
+    },
+    "debounce": 0
+  },
+  "shinyEvents": ["plotly_hover", "plotly_click", "plotly_selected", "plotly_relayout", "plotly_brushed", "plotly_brushing", "plotly_clickannotation", "plotly_doubleclick", "plotly_deselect", "plotly_afterplot"],
+  "base_url": "https://plot.ly"
+}
