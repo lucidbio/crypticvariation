@@ -114,8 +114,76 @@
 <p>Having identified several orthologs with a known “non-native” activity, we used the MBL gene family as a model to study cryptic genetic variation in evolution.</p>
 <h2>Results</h2>
 <h3>Comparative directed evolution of four orthologous MBLs</h3>
-<p>We chose four variants of MBLs as starting points - NDM1 (New Delhi metallo-β-lactamase 1), VIM2 and VIM7 (Verona imipenemase 2 and 7) and EBL1 (Erythrobacter β-lactamase 1). These variants are orthologs, since they come from different sources. VIM2 and NDM1 were chosen because a lot of their biochemical and structural data is available. The others (VIM7 and EBL1) were chosen because of their high degree of homology with the first two: VIM7 and VIM2 share 80% amino acid sequence identity, while EBL1 and NDM1 share 55%. All four have similar catalytic efficiencies for β-lactam hydrolysis (kcat/KM only varies up to twofold across all six MBLs). However, their catalytic efficiencies for the promiscuous PMH activity varies by ~20 fold.</p>
- <script>
+<p>We chose four variants of MBLs as starting points - NDM1 (New Delhi metallo-β-lactamase 1), VIM2 and VIM7 (Verona imipenemase 2 and 7) and EBL1 (Erythrobacter β-lactamase 1). These variants are orthologs, since they come from different sources (<a class="expand" onclick="show('box2')">more details</a>). VIM2 and NDM1 were chosen because a lot of their biochemical and structural data is available. The others (VIM7 and EBL1) were chosen because of their high degree of homology with the first two: VIM7 and VIM2 share 80% amino acid sequence identity, while EBL1 and NDM1 share 55%. All four have similar catalytic efficiencies for β-lactam hydrolysis (kcat/KM only varies up to twofold across all six MBLs). However, their catalytic efficiencies for the promiscuous PMH activity varies by ~20 fold.</p>
+ <div id="box2" style="display:none" class="box">
+		<h5>Box 2</h5>
+	 
+	<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+  <tr>
+    <th class="tg-0lax">Enzyme name</th>
+    <th class="tg-0lax">Uniprot ID</th>
+    <th class="tg-0lax">Genbank accession</th>
+    <th class="tg-0lax">Organismal source</th>
+    <th class="tg-0lax">PDB ID code (resolution)</th>
+    <th class="tg-0lax">References</th>
+  </tr>
+  <tr>
+    <td class="tg-0lax">FIM1</td>
+    <td class="tg-0lax">K7SA42</td>
+    <td class="tg-0lax">AFV91534.1</td>
+    <td class="tg-0lax">Pseudomonas aeruginosa</td>
+    <td class="tg-0lax">n.a.</td>
+    <td class="tg-0lax">-1</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">EBL1</td>
+    <td class="tg-0lax">Q2N9N3</td>
+    <td class="tg-0lax">ABC63608.1</td>
+    <td class="tg-0lax">Erythrobacter litoralis HTCC 2594</td>
+    <td class="tg-0lax">n.a.</td>
+    <td class="tg-0lax">n.a.</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">NDM1</td>
+    <td class="tg-0lax">C7C422</td>
+    <td class="tg-0lax">CAZ39946.1</td>
+    <td class="tg-0lax">Klebsiella pneumonia</td>
+    <td class="tg-0lax">3spu (2.1Å)</td>
+    <td class="tg-0lax">-2</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">VIM2</td>
+    <td class="tg-0lax">Q9K2N0</td>
+    <td class="tg-0lax">YP_007509601.1</td>
+    <td class="tg-0lax">Pseudomonas aeruginosa</td>
+    <td class="tg-0lax">1ko3 (1.9Å)</td>
+    <td class="tg-0lax">-3</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">VIM1</td>
+    <td class="tg-0lax">Q9XAY4</td>
+    <td class="tg-0lax">CAB46686.1</td>
+    <td class="tg-0lax">Pseudomonas aeruginosa</td>
+    <td class="tg-0lax">5n5g  (1.3 Å)</td>
+    <td class="tg-0lax">-4</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">VIM7</td>
+    <td class="tg-0lax">Q840P9</td>
+    <td class="tg-0lax">YP_001427370.1</td>
+    <td class="tg-0lax">Pseudomonas aeruginosa</td>
+    <td class="tg-0lax">2y87 (1.9Å)</td>
+    <td class="tg-0lax">-5</td>
+  </tr>
+</table>
+	</div>
+	<script>
     var stage;
     document.addEventListener("DOMContentLoaded", function () {
       stage = new NGL.Stage("viewport",{backgroundColor:'white'});
