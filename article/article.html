@@ -285,12 +285,7 @@ Plotly.newPlot('fig2aDiv', fig2a, layout, {showSendToCloud: true});
 <h3>Fitness is a combination of expression level and catalytic activity.</h3>
 <p>The conventional idea is that the more stable or the more soluble a protein, or the greater its functional expression, the more evolvable it is. These properties are thought to help stabilize deleterious mutations and allow for more adaptive mutations to accumulate. However, NDM1 and VIM7 have very similar properties and expression [see Fig ____], but take completely different evolutionary trajectories.</p>
 <p>How can one explain this result at the molecular level? To do so, we measured a range of molecular properties over the rounds of evolution - catalytic efficiency, soluble expression, melting temperature, and oligomeric assembly.</p>
-	
-
-	
-<p>Let’s start off with NDM1. In R1, its catalytic efficiency increased ~300-fold, but its solubility decreased from 43% to 25%. Thus, its fitness increased only by ~20-fold. The decrease in solubility from R1 never quite recovered. Catalytic efficiency continued to increase, however, which is reflected in the fitness increase of NDM1.</p>
-<p>
-<figure>
+	<figure>
 	<d-figure>
  <div id="fig3Div"><!-- Plotly chart will be drawn inside this DIV --></div>
  <figcaption>
@@ -306,7 +301,33 @@ Plotly.newPlot('fig3Div', fig3a, layout, {showSendToCloud: true});
 </script>
 
 	
-	<figure>
+<p>Let’s start off with NDM1. In R1, its catalytic efficiency increased ~300-fold, but its solubility decreased from 43% to 25%. Thus, its fitness increased only by ~20-fold. The decrease in solubility from R1 never quite recovered. Catalytic efficiency continued to increase, however, which is reflected in the fitness increase of NDM1.</p>
+
+
+<figure>
+	<d-figure>
+ <div id="fig3bDiv"><!-- Plotly chart will be drawn inside this DIV --></div>
+ <figcaption>
+	 Figure 3A-D</figcaption>
+</d-figure>
+</figure>
+<script src="data/fig3b.js">
+</script>
+<script>
+var layout = {autosize:true};
+
+Plotly.newPlot('fig3bDiv', fig3b, layout, {showSendToCloud: true});	 
+</script>
+	
+	
+
+<p>Looking at the same figure above, one can see that VIM2 evolved via a completely different molecular pathway - over evolution, its catalytic activity only showed a modest improvement, but its solubility increased. It is also interesting to note that VIM2 evolved to exist in an equilibrium between its monomer and dimer forms. This matters even more because the catalytic efficiency of the dimer is lower than that of the monomer.</p>
+	
+
+	
+<p>In sum, our results suggest that two distinct molecular mechanisms underlie the observed differences in evolutionary trajectories. NDM1 evolved largely by improving catalytic efficiency at the cost of solubility, while VIM2 evolved largely by improving stability and solubility. </p>
+
+<figure>
 	<d-figure>
  <div id="fig3bDiv"><!-- Plotly chart will be drawn inside this DIV --></div>
  <figcaption>
@@ -322,12 +343,10 @@ var layout = {autosize:true};
 
 Plotly.newPlot('fig3bDiv', fig3b, layout, {showSendToCloud: true});	 
 </script>
-
-
-</p>
-<p>Looking at the same figure above, one can see that VIM2 evolved via a completely different molecular pathway - over evolution, its catalytic activity only showed a modest improvement, but its solubility increased. It is also interesting to note that VIM2 evolved to exist in an equilibrium between its monomer and dimer forms. This matters even more because the catalytic efficiency of the dimer is lower than that of the monomer.</p>
-<p>In sum, our results suggest that two distinct molecular mechanisms underlie the observed differences in evolutionary trajectories. NDM1 evolved largely by improving catalytic efficiency at the cost of solubility, while VIM2 evolved largely by improving stability and solubility. </p>
-<h3>Structural Basis of Adaptation</h3>
+	
+	
+	
+	<h3>Structural Basis of Adaptation</h3>
 <h2>Discussion</h2>
 <p>The diverse functions of proteins that exist in life today demonstrate that amino acid sequences are able to evolve to perform novel functions, and researchers have been able to see examples of such adaptation in real time. This suggests that biological molecules have a remarkable degree of evolvability. These successful examples of adaptation, however, may also obscure a wealth of cases where proteins have failed to adapt or were limited in their ability to evolve a new function.</p>
 <p>The evolutionary potential of a given protein sequence would be useful to predict, especially for synthetic biologists who would like to design novel proteins with optimal activity. Would it be possible to look at a group of protein sequences and their physicochemical properties and predict which among these would evolve to have an optimum function?</p>
