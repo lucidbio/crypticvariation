@@ -274,7 +274,20 @@ Plotly.newPlot('fig2aDiv', fig2a, layout, {showSendToCloud: true});
 </script>
 </p>
 <p>We could also reintroduce the mutations that get fixed in each round of evolution directly into their wild-type counterparts, and ask whether the order in which mutations are acquired matter. If yes, this would further support that the starting point matters in the process of evolution. This effect is called epistatic constraint.</p>
-<p>[Fig 2B]</p>
+<figure>
+	<d-figure>
+ <div id="fig2bDiv"><!-- Plotly chart will be drawn inside this DIV --></div>
+ <figcaption>
+	 Figure 2B</figcaption>
+</d-figure>
+</figure>
+<script src="data/fig2b.js">
+</script>
+<script>
+var layout = {autosize:true};
+
+Plotly.newPlot('fig2bDiv', fig2b, layout, {showSendToCloud: true});	 
+</script>
 <p>We found that introducing R1 mutations alone into wild-type NDM1 improved its fitness ~40-fold. Doing the same with R2 mutations alone barely had an effect. Introducing R2 mutations in the background of the R1 mutation further improved NDM1-R1’s fitness. This means that for NDM1, the starting point is really important in determining the improvement in fitness. This effect is called epistatic constraint.</p>
 <p>For VIM2, though, it seems that the order of acquiring mutations does not matter. Adding R1 mutations alone, or both R1 and R2 mutations, led to a similar improvement in fitness.</p>
 <p>The R1 mutation that had the strongest fitness effect on NDM1 was W93G (see Fig 2B). To ask why different mutations came up in R1 of evolution with NDM1 and VIM2, we reintroduced the W93G mutation into both NDM1-WT and VIM2-WT and measured the improvement in fitness.</p>
