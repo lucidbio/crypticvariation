@@ -72,8 +72,8 @@
   }</script>
 </d-front-matter>
 <d-title>
-  <figure style="grid-column: page; margin: 1rem 0;"><img src="momentum.png" style="width:100%; border: 1px solid rgba(0, 0, 0, 0.2);"/></figure>
-  <p>Short pithy description here?</p>
+<!--  <figure style="grid-column: page; margin: 1rem 0;"><img src="momentum.png" style="width:100%; border: 1px solid rgba(0, 0, 0, 0.2);"/></figure>
+  <p>Short pithy description here?</p>-->
 </d-title>
 <d-byline></d-byline>
 <d-article>
@@ -212,10 +212,10 @@
 </d-figure>
 
 </figure>
-<p>We used each of these sequences as a starting point for directed evolution experiments, in which we aimed to maximise the PMH activity of the enzymes:</p>
-<p>[Schematic]</p>
+<p>We used each of these sequences as a starting point for directed evolution experiments, in which we aimed to maximise the PMH activity of the enzymes.<!--:</p>
+<p>[Schematic]--></p>
 <p>We transformed randomly mutagenized gene pools into E. coli, and used purifying selection to enrich for only functional variants, by plating the libraries onto agar plates containing a low ampicillin concentration. Per round, we inoculated a total of 396 variant colonies individually into 96-well plates containing liquid media. These were regrown, lysed and screened for PMH activity. We isolated and sequenced the most improved variant(s) and used them as templates for the next round of evolution.</p>
-<p>Within the first two rounds of evolution, we noticed that the orthologs that shared higher similarity showed similar improvements in fitness, regardless of their fitness starting point (compare the slopes of EBL1 with NDM1, and VIM2 with VIM7, in Fig ___).  Thus, we proceeded with directed evolution only for representative orthologs, i.e. VIM2 and NDM1.</p>
+<p>Within the first two rounds of evolution, we noticed that the orthologs that shared higher similarity showed similar improvements in fitness, regardless of their fitness starting point (compare the slopes of EBL1 with NDM1, and VIM2 with VIM7, in the figure below).  Thus, we proceeded with directed evolution only for representative orthologs, i.e. VIM2 and NDM1.</p>
 	
 <figure>
 	<d-figure>
@@ -276,18 +276,12 @@ Plotly.newPlot('fig2aDiv', fig2a, layout, {showSendToCloud: true});
 <p>We could also reintroduce the mutations that get fixed in each round of evolution directly into their wild-type counterparts, and ask whether the order in which mutations are acquired matter. If yes, this would further support that the starting point matters in the process of evolution. This effect is called epistatic constraint.</p>
 <figure>
 	<d-figure>
- <div id="fig2bDiv"><!-- Plotly chart will be drawn inside this DIV --></div>
+ <img src="fig2btemp.png" />
  <figcaption>
 	 Figure 2B</figcaption>
 </d-figure>
 </figure>
-<script src="data/fig2b.js">
-</script>
-<script>
-var layout = {autosize:true};
 
-Plotly.newPlot('fig2bDiv', fig2b, layout, {showSendToCloud: true});	 
-</script>
 <p>We found that introducing R1 mutations alone into wild-type NDM1 improved its fitness ~40-fold. Doing the same with R2 mutations alone barely had an effect. Introducing R2 mutations in the background of the R1 mutation further improved NDM1-R1’s fitness. This means that for NDM1, the starting point is really important in determining the improvement in fitness. This effect is called epistatic constraint.</p>
 <p>For VIM2, though, it seems that the order of acquiring mutations does not matter. Adding R1 mutations alone, or both R1 and R2 mutations, led to a similar improvement in fitness.</p>
 <p>The R1 mutation that had the strongest fitness effect on NDM1 was W93G (see Fig 2B). To ask why different mutations came up in R1 of evolution with NDM1 and VIM2, we reintroduced the W93G mutation into both NDM1-WT and VIM2-WT and measured the improvement in fitness.</p>
