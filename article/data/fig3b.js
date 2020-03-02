@@ -68,7 +68,7 @@ fig3b = {
       "ticks": "outside"
     },
     "yaxis2": {
-      "title": "Solubility (%))",
+      "title": "Solubility (%)",
       "range": [0, 100],
       "titlefont": {
         "family": "Arial",
